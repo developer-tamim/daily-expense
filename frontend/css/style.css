@@ -232,6 +232,44 @@ textarea{
   backdrop-filter: blur(3px);
 }
 
+.glass:type {
+  /* background: rgba(145, 145, 145, 0.5); */
+  color: #fff;
+}
+
 .glass:focus {
   /* background: rgba(145, 145, 145, 0.5); */
+}
+
+/* ==================================================== history =================================================== */
+
+.history-page{
+  width: 100%;
+  background-image: url(../images/history-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.history-page .glass {
+  color: #fff; /* Change this to your desired text color */
+}
+
+/* Set the color of the calendar icon in the date input */
+.history-page .glass::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Invert the color of the calendar icon */
+}
+
+/* Additional styles for better visibility */
+.history-page .glass {
+  border: none;
+  outline: none;
+  padding: 18px;
+  border-radius: 5px;
+  background: rgba(63, 63, 63, 0.3);
+  backdrop-filter: blur(3px);
+  opacity: 1px;
+}
+
+.history-page .glass:focus {
+  background: rgba(145, 145, 145, 0.5); /* Change this to your desired background color on focus */
 }
